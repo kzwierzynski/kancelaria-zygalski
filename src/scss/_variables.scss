@@ -1,0 +1,32 @@
+$prim: #0B2B47;
+$primd: darken($prim, 5%);
+$priml: lighten($prim, 6%);
+$prim1: rgba(11, 43, 71, 0.5);
+$prim2: rgba(11, 43, 71, 0.2);
+$prim3: rgba(11, 43, 71, 0.05);
+
+$brd: rgba(75, 75, 75, 0.25);
+$brdl: rgba(131, 131, 131, 0.25);
+$brdd: rgba(44, 44, 44, 0.25);
+
+$white: #fff;
+$whited: darken(#DADBDC, 2%);
+$whited-temp: #fefefe;
+// $whited2: rgba(255, 255, 255, 0.9);
+// $whited3: rgba(255, 255, 255, 0);
+
+$divider: #aadcd2;
+
+$blackl: rgba(0, 0, 0, 0.8);
+$blackl1: rgba(0, 0, 0, 0.6);
+$blackl2: rgba(0, 0, 0, 0.0);
+
+$shadow: 0 1px 20px $brdl;
+$shadowPrim: 0 1px 5px $prim1;
+
+$green: #159564;
+$greend: darken($green, 8%);
+$greenl: lighten($green, 5%);
+
+$col-red: rgb(211, 35, 61);
+$col-dark-red: darken($col-red, 10%);

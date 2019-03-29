@@ -1,0 +1,88 @@
+.c-slide {
+  width: 100%;
+  margin-bottom: 2rem;
+  cursor: default;
+
+  &__row {
+    padding: 4rem 0 0;;
+  }
+
+  &__title {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    text-align: right;
+  }
+
+  &__list {
+    padding: 0 2rem;
+    padding-right: 4rem;
+  }
+
+  &__item {
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 150%;
+    text-align: justify;
+  }
+
+  &__btn {
+    padding: 0 2rem 0 0;
+    text-align: center;
+  }
+
+  &__badges {
+    padding: 0;
+  }
+
+  &__scrollbar {
+    top: 0;
+    height: 3px !important;
+  }
+
+  @media(max-width:991px){
+    &__title {
+      font-size: 1.2rem;
+    }
+
+    &__item {
+      font-size: 1rem;
+    }
+  }
+
+  @media(max-width:767px){
+    &__row {
+      padding: 2rem;
+      padding-bottom: 0;
+    }
+
+    &__title {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    &__list {
+      padding-right: 0;
+    }
+
+    &__item {
+      margin-bottom: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    &__btn {
+      padding: 0;
+    }
+
+    &__badges {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media(max-width:575px){
+    &__row {
+      padding-left: 1rem;
+    }
+  }
+}

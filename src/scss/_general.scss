@@ -1,0 +1,96 @@
+// Variable Overrides 
+$theme-colors: (
+  "primary": $prim,
+  "green": $green,
+  "--green": $green
+  // "info" : $inf
+);
+$body-bg: $prim1;
+
+// Bootstrap Sass Imports
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  position: relative;
+  min-width: 320px;
+  min-height: 100%;
+  padding-top: 80px;
+  // padding-bottom: 120px;
+  font-family: 'Lato', sans-serif;
+  background: $prim3;
+}
+
+.container-fluid {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+a {
+  color: $green;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: $greend;
+    text-decoration: none;
+  }
+}
+
+.card, .jumbotron, .box, .box1{
+  border: none !important;
+  box-shadow: $shadow;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.btn{
+  border-radius: 5px;
+}
+
+@media(max-width:767px){
+  body{
+    font-size: 70%;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3{
+    font-size: 1.3rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+  h5{
+    font-size: 1rem;
+  }
+}

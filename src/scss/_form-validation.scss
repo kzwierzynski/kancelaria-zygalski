@@ -1,0 +1,15 @@
+.invalid {
+  font-size: 0.8rem;
+  color: $col-red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+.js-invalid {
+  // border: solid $col-red 2px !important;
+  border-color: $col-red !important;
+}

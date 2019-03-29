@@ -1,0 +1,21 @@
+.swiper-container {
+  margin-bottom: 2rem;
+}
+
+.swiper-scrollbar-drag {
+  height: 3px;
+  background: $green !important;
+}
+
+.swiper-slide {
+  opacity: 1;
+
+  @media(max-width:1200px){
+    opacity: 0.25;
+    transition: opacity 0.8s ease-in-out;
+  }
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}

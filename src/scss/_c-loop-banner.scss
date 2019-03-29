@@ -1,0 +1,28 @@
+.l-loop-banner {
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  z-index: -1;
+  width: 50%;
+  // transform: translate(-12%, -35%);
+
+  @media screen and (min-width: 1920px) {
+    // width: 120%;
+    // transform: translate(-15%, -35%);
+  }
+
+  @include media-breakpoint-down(lg) {
+    // width: 110%;
+    // transform: translate(-15%, -35%);
+  }
+
+  @include media-breakpoint-down(md) {
+    // width: 120%;
+    // transform: translate(-18%, -35%);
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 40%;
+    // transform: translate(-25%, -40%);
+  }
+}

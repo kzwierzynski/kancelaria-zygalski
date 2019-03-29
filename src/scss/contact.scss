@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext");
+@import "bootstrap";
+@import 'variables';
+@import 'general';
+@import 'nav';
+@import 'sidebar';
+@import 'footer';
+@import 'form-validation';
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.row{
+  margin: 0;
+}
+
+.wrapper{
+  // padding: 0;
+  margin: 3em 0;
+  box-shadow: $shadow;
+}
+
+.company-info{
+  background:$priml;
+  color: $white;
+  text-align: center;  
+  padding: 1rem;
+}
+
+.company-info li{
+  margin-top: 0.4rem;  
+  color: $whited;
+}
+
+.company-info__link {
+  padding: 0.3rem 0;
+  font-size: 1em;
+  color: $whited;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.contact{
+  background:#f9feff;
+  padding: 0;
+}
+
+.contact h3{
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+/* FORM STYLES */
+
+.contact form #js_send, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1rem;
+  border:1px solid $prim1;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.contact form #js_send{
+  background:$priml;
+  border:0;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color:$white;    
+  cursor: pointer;  
+}
+
+.contact form #js_send:hover,.contact form #js_send:focus{
+  background:$prim;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+.contact form #js_send:disabled {
+  background-color: $prim2;
+  color: #aaa;
+  cursor: not-allowed !important;
+}
+
+/* LARGE SCREENS */
+@include media-breakpoint-up(md) {
+  .company-info li{
+    padding: 0;  
+  }
+
+  .contact form input, .contact form textarea {
+    font-size: 1rem;
+  }
+}

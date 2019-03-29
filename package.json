@@ -1,0 +1,35 @@
+{
+  "name": "jz_www",
+  "version": "1.0.x",
+  "description": "Jakub Żygalski WWW",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "4.2.x",
+    "jquery": "3.3.x",
+    "popper.js": "1.14.x",
+    "swiper": "4.5.x"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.x",
+    "@babel/preset-env": "^7.4.2",
+    "babel-preset-env": "1.7.x",
+    "babelify": "10.0.x",
+    "browser-sync": "2.26.x",
+    "browserify": "16.2.x",
+    "gulp": "4.0.x",
+    "gulp-autoprefixer": "6.0.x",
+    "gulp-clean-css": "4.0.x",
+    "gulp-imagemin": "5.0.x",
+    "gulp-rename": "1.4.x",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-uglify": "3.0.x",
+    "vinyl-buffer": "1.0.x",
+    "vinyl-source-stream": "2.0.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KZW",
+  "license": "ISC"
+}

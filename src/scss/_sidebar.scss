@@ -1,0 +1,54 @@
+#sidebar {
+  top: 80px;
+}
+
+.overlay,.sideMenu{
+  position:fixed;
+  bottom:0;
+}
+
+.overlay{
+  top:80px;
+  left:100%;
+  margin:auto;
+  background-color:rgba(0,0,0,.6);
+  z-index:998;
+  transition: left ease 0.4s;
+}
+
+.overlay.open{
+  left:0;
+  right:0;
+}
+
+.sidebarNavigation{
+  margin-bottom:0;
+  z-index:999;
+  justify-content: flex-start;
+}
+
+/* .sidebarNavigation .leftNavbarToggler{margin-right:10px;order:-1} */
+.sideMenu{
+  top:78px;
+  right:-100%;
+  z-index:999;
+  height: 100%;
+  overflow:hidden;
+  width:100%;
+  max-width:25em;
+  margin-bottom:0;
+  padding:1rem;
+  background: $prim;
+  transition: right ease 0.6s;
+}
+
+.sideMenu.open{
+  right:0;
+  display:block;
+  overflow-y:auto; 
+}
+
+// .sideMenu ul{
+//   margin:0;
+//   padding:0 15px;
+// }

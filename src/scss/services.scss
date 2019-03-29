@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext");
+@import "bootstrap";
+@import 'variables';
+@import 'general';
+@import 'sidebar';
+@import 'nav';
+@import 'footer';
+// @import "../../node_modules/swiper/dist/css/swiper.min.css";
+@import 'c-slide-nav';
+@import 'c-slide';
+@import "swiper";
+
+.wrapper{
+  padding: 0;
+  margin: 3rem 0;
+  box-shadow: $shadow;
+}
