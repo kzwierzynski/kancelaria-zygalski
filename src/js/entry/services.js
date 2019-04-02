@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { debounce, footerPosition } from './utils';
 import { setActiveNavLinks, activateSlideOnClick } from './slides';
 import handleMobileMenu from './sidebar-mobile';
 
@@ -7,9 +8,11 @@ window.jQuery = $; window.$ = $;
 
 $(window).ready(() => {
   handleMobileMenu();
+  footerPosition();
   setActiveNavLinks();
   activateSlideOnClick();
 
-  const footer = $('.footers').outerHeight();
-  $('body').css('paddingBottom', `${footer}px`);
+  $(window).on('resize', debounce(() => {
+    footerPosition();
+  }));
 });

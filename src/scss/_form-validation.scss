@@ -7,9 +7,12 @@
   &.show {
     opacity: 1;
   }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 0.7rem;
+  }
 }
 
 .js-invalid {
-  // border: solid $col-red 2px !important;
   border-color: $col-red !important;
 }

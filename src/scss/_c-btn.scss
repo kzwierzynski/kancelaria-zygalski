@@ -4,9 +4,9 @@
 }
 
 .c-btn {
-  width: 300px;
-  padding: 1.2rem;
-  font-size: 2rem;
+  width: 220px;
+  padding: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: $white;
   text-align: center;
@@ -14,7 +14,7 @@
   letter-spacing: 0.1em;
   background-color: $green;
   border: 0;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 0 2px $greend;
   transition: text-decoration 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
@@ -28,24 +28,10 @@
     box-shadow: none;
   }
 
-  // &--green {
-  //   background-color: $col-green;
-
-  //   &:hover {
-  //     background-color: $col-dark-green;
-  //   }
-  // }
-
-  // &--sm {
-  //   width: 170px !important;
-  //   padding: 0.5rem !important;
-  //   font-size: 0.9rem !important;
-  // }
-
   @include media-breakpoint-down(md) {
-    width: 260px;
+    width: 180px;
     padding: 0.8rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
     box-shadow: 0 0 1px $greend;
   }
 }

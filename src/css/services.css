@@ -4070,6 +4070,10 @@ body {
 .container {
   padding: 0; }
 
+.wrapper {
+  margin: 3em 0;
+  box-shadow: 0 1px 20px rgba(131, 131, 131, 0.25); }
+
 .row {
   margin: 0; }
 
@@ -4077,7 +4081,7 @@ a {
   color: #159564;
   transition: 0.3s ease; }
   a:hover {
-    color: #10714c;
+    color: #117a52;
     text-decoration: none; }
 
 .card, .jumbotron, .box, .box1 {
@@ -4133,7 +4137,7 @@ a.anchor {
 
 /* .sidebarNavigation .leftNavbarToggler{margin-right:10px;order:-1} */
 .sideMenu {
-  top: 78px;
+  top: 80px;
   right: -100%;
   z-index: 999;
   height: 100%;
@@ -4150,8 +4154,17 @@ a.anchor {
   display: block;
   overflow-y: auto; }
 
+.sideMenu ul {
+  margin: 0 0 2rem;
+  padding: 0 15px; }
+
+@media (max-width: 575.98px) {
+  .sideMenu {
+    max-width: 22em; } }
+
 .navbar {
   height: 80px;
+  max-width: 100% !important;
   padding: 0 !important;
   background: #0B2B47 !important;
   border-bottom: solid rgba(75, 75, 75, 0.25) 2px !important; }
@@ -4161,6 +4174,9 @@ a.anchor {
 
 nav img {
   height: 60px; }
+
+.navbar-toggler {
+  margin-right: 0.5rem; }
 
 .nav a {
   float: right; }
@@ -4209,13 +4225,13 @@ nav img {
 .navbar-collapse {
   flex-direction: column; }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   nav img {
     height: 50px; }
   .nav__link, .nav-link--green, .nav__txt {
     font-size: 0.8rem !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .navbar-nav {
     padding-bottom: 1rem; }
   .nav__link, .nav-link--green, .nav__txt {
@@ -4224,6 +4240,10 @@ nav img {
     font-size: 1.2rem !important; }
   .nav__link:hover::after {
     width: 0; } }
+
+@media (max-width: 575.98px) {
+  .nav__link, .nav-link--green, .nav__txt {
+    font-size: 1rem !important; } }
 
 /*---- Footer Start-----*/
 footer {
@@ -4269,6 +4289,9 @@ footer ul {
 
 .footer__copy a {
   color: #aadcd2 !important; }
+
+.footer__flaticon {
+  padding-top: 0 !important; }
 
 .footers {
   width: 100%;
@@ -4406,10 +4429,5 @@ footer ul {
 
 .swiper-slide-active {
   opacity: 1; }
-
-.wrapper {
-  padding: 0;
-  margin: 3rem 0;
-  box-shadow: 0 1px 20px rgba(131, 131, 131, 0.25); }
 
 /*# sourceMappingURL=services.css.map */

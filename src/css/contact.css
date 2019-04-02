@@ -4070,6 +4070,10 @@ body {
 .container {
   padding: 0; }
 
+.wrapper {
+  margin: 3em 0;
+  box-shadow: 0 1px 20px rgba(131, 131, 131, 0.25); }
+
 .row {
   margin: 0; }
 
@@ -4077,7 +4081,7 @@ a {
   color: #159564;
   transition: 0.3s ease; }
   a:hover {
-    color: #10714c;
+    color: #117a52;
     text-decoration: none; }
 
 .card, .jumbotron, .box, .box1 {
@@ -4107,8 +4111,60 @@ a.anchor {
   h5 {
     font-size: 1rem; } }
 
+#sidebar {
+  top: 80px; }
+
+.overlay, .sideMenu {
+  position: fixed;
+  bottom: 0; }
+
+.overlay {
+  top: 80px;
+  left: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 998;
+  transition: left ease 0.4s; }
+
+.overlay.open {
+  left: 0;
+  right: 0; }
+
+.sidebarNavigation {
+  margin-bottom: 0;
+  z-index: 999;
+  justify-content: flex-start; }
+
+/* .sidebarNavigation .leftNavbarToggler{margin-right:10px;order:-1} */
+.sideMenu {
+  top: 80px;
+  right: -100%;
+  z-index: 999;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 25em;
+  margin-bottom: 0;
+  padding: 1rem;
+  background: #0B2B47;
+  transition: right ease 0.6s; }
+
+.sideMenu.open {
+  right: 0;
+  display: block;
+  overflow-y: auto; }
+
+.sideMenu ul {
+  margin: 0 0 2rem;
+  padding: 0 15px; }
+
+@media (max-width: 575.98px) {
+  .sideMenu {
+    max-width: 22em; } }
+
 .navbar {
   height: 80px;
+  max-width: 100% !important;
   padding: 0 !important;
   background: #0B2B47 !important;
   border-bottom: solid rgba(75, 75, 75, 0.25) 2px !important; }
@@ -4118,6 +4174,9 @@ a.anchor {
 
 nav img {
   height: 60px; }
+
+.navbar-toggler {
+  margin-right: 0.5rem; }
 
 .nav a {
   float: right; }
@@ -4166,13 +4225,13 @@ nav img {
 .navbar-collapse {
   flex-direction: column; }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   nav img {
     height: 50px; }
   .nav__link, .nav-link--green, .nav__txt {
     font-size: 0.8rem !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .navbar-nav {
     padding-bottom: 1rem; }
   .nav__link, .nav-link--green, .nav__txt {
@@ -4182,48 +4241,9 @@ nav img {
   .nav__link:hover::after {
     width: 0; } }
 
-#sidebar {
-  top: 80px; }
-
-.overlay, .sideMenu {
-  position: fixed;
-  bottom: 0; }
-
-.overlay {
-  top: 80px;
-  left: 100%;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 998;
-  transition: left ease 0.4s; }
-
-.overlay.open {
-  left: 0;
-  right: 0; }
-
-.sidebarNavigation {
-  margin-bottom: 0;
-  z-index: 999;
-  justify-content: flex-start; }
-
-/* .sidebarNavigation .leftNavbarToggler{margin-right:10px;order:-1} */
-.sideMenu {
-  top: 78px;
-  right: -100%;
-  z-index: 999;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-  max-width: 25em;
-  margin-bottom: 0;
-  padding: 1rem;
-  background: #0B2B47;
-  transition: right ease 0.6s; }
-
-.sideMenu.open {
-  right: 0;
-  display: block;
-  overflow-y: auto; }
+@media (max-width: 575.98px) {
+  .nav__link, .nav-link--green, .nav__txt {
+    font-size: 1rem !important; } }
 
 /*---- Footer Start-----*/
 footer {
@@ -4270,6 +4290,9 @@ footer ul {
 .footer__copy a {
   color: #aadcd2 !important; }
 
+.footer__flaticon {
+  padding-top: 0 !important; }
+
 .footers {
   width: 100%;
   position: absolute;
@@ -4282,6 +4305,9 @@ footer ul {
   transition: opacity 0.3s ease; }
   .invalid.show {
     opacity: 1; }
+  @media (max-width: 767.98px) {
+    .invalid {
+      font-size: 0.7rem; } }
 
 .js-invalid {
   border-color: #d3233d !important; }
@@ -4293,10 +4319,6 @@ ul {
 .row {
   margin: 0; }
 
-.wrapper {
-  margin: 3em 0;
-  box-shadow: 0 1px 20px rgba(131, 131, 131, 0.25); }
-
 .company-info {
   background: #0f3b61;
   color: #fff;
@@ -4304,12 +4326,13 @@ ul {
   padding: 1rem; }
 
 .company-info li {
-  margin-top: 0.4rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
   color: #d5d6d7; }
 
 .company-info__link {
   padding: 0.3rem 0;
-  font-size: 1em;
+  font-size: 1rem;
   color: #d5d6d7; }
   .company-info__link:hover {
     color: #fff;
@@ -4331,6 +4354,7 @@ ul {
   font-size: 0.9rem; }
 
 .contact form #js_send {
+  margin-bottom: 1rem;
   background: #0f3b61;
   border: 0;
   border-radius: 5px;
@@ -4348,6 +4372,63 @@ ul {
   background-color: rgba(11, 43, 71, 0.2);
   color: #aaa;
   cursor: not-allowed !important; }
+
+.c-form__link {
+  color: #159564; }
+  .c-form__link:hover {
+    color: #117a52; }
+
+.c-form__checkbox-label {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0 1rem 2.5rem;
+  font-size: 0.8rem;
+  cursor: pointer; }
+
+.c-form__checkbox-input {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease; }
+  .c-form__checkbox-input:hover ~ .c-form__checkbox {
+    background: #d5d6d7; }
+  .c-form__checkbox-input:checked ~ .c-form__checkbox {
+    border-color: #18ab73; }
+  .c-form__checkbox-input:checked ~ .c-form__checkbox::after {
+    opacity: 1; }
+
+.c-form__checkbox {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid rgba(11, 43, 71, 0.5);
+  border-radius: 4px;
+  transition: 0.3s ease; }
+  .c-form__checkbox--invalid {
+    background: transparent;
+    border: 2px solid #d3233d; }
+    .c-form__checkbox--invalid::after {
+      display: none; }
+  .c-form__checkbox::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 11px;
+    content: "";
+    border: solid #18ab73;
+    border-width: 0 2px 2px 0;
+    opacity: 0;
+    transition: 0.3s ease;
+    -webkit-transform: translate(-50%, -60%) rotate(45deg);
+            transform: translate(-50%, -60%) rotate(45deg); }
 
 /* LARGE SCREENS */
 @media (min-width: 768px) {

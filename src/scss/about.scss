@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext");
+@import "bootstrap";
 @import 'variables';
 @import 'general';
 @import 'sidebar';
 @import 'nav';
 @import 'footer';
+
+.c-about {
+  &__section {
+    padding: 2rem 4rem;
+    color: $blackl;
+  }
+
+  &__header {
+    color: $blackl;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 150%;
+  }
+}

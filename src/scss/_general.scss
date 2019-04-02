@@ -43,6 +43,11 @@ body{
   padding: 0;
 }
 
+.wrapper{
+  margin: 3em 0;
+  box-shadow: $shadow;
+}
+
 .row {
   margin: 0;
 }

@@ -3,8 +3,8 @@ import { debounce, footerPosition } from './utils';
 import handleMobileMenu from './sidebar-mobile';
 
 // require('css/contact.css');
-window.jQuery = $; window.$ = $;
 require('bootstrap');
+window.jQuery = $; window.$ = $;
 
 let sendButton = document.getElementById("js_send");
 let form_id_js = "contactForm";
@@ -43,6 +43,10 @@ function validateMsg(msg) {
   return (msg.length <= maxLength);
 }
 
+function validateCheckbox(checkbox) {
+  return checkbox.is(':checked');
+}
+
 function typeValidation(inputToValidate) {
   const validationType = $(inputToValidate).data('validation');
   const input = $(inputToValidate);
@@ -64,6 +68,9 @@ function typeValidation(inputToValidate) {
       break;
     case 'msg':
       inputValid = validateMsg(inputValue);
+      break;
+    case 'checkbox':
+      inputValid = validateCheckbox(input);
       break;
     default:
       inputValid = false;
@@ -204,5 +211,4 @@ $(window).ready(() => {
   $(window).on('resize', debounce(() => {
     footerPosition();
   }));
-
 });
