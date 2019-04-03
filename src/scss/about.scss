@@ -7,8 +7,17 @@
 @import 'footer';
 
 .c-about {
+  &__cover {
+    background-color: black;
+  }
+
+  &__cover-img {
+    width: 100%;
+    opacity: 0.4;
+  }
+
   &__section {
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 1rem;
     color: $blackl;
   }
 
@@ -22,4 +31,23 @@
     text-align: justify;
     line-height: 150%;
   }
+
+  @include media-breakpoint-down(sm) {
+    &__section {
+      padding: 2rem 2rem 1rem;
+    }
+
+    &__paragraph {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &__section {
+      padding: 1rem;
+    }
+
+    
+  }
+
 }

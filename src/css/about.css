@@ -4298,8 +4298,15 @@ footer ul {
   position: absolute;
   bottom: 0; }
 
+.c-about__cover {
+  background-color: black; }
+
+.c-about__cover-img {
+  width: 100%;
+  opacity: 0.4; }
+
 .c-about__section {
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 1rem;
   color: rgba(0, 0, 0, 0.8); }
 
 .c-about__header {
@@ -4310,5 +4317,15 @@ footer ul {
   margin-bottom: 2rem;
   text-align: justify;
   line-height: 150%; }
+
+@media (max-width: 767.98px) {
+  .c-about__section {
+    padding: 2rem 2rem 1rem; }
+  .c-about__paragraph {
+    margin-bottom: 1.5rem; } }
+
+@media (max-width: 575.98px) {
+  .c-about__section {
+    padding: 1rem; } }
 
 /*# sourceMappingURL=about.css.map */
